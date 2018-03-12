@@ -12445,7 +12445,7 @@ fabric.Image.filters.BaseFilter.fromObject = function(object, callback) {
             if (this.inCompositionMode) {
                 this.renderSelection(boundaries, ctx);
             }
-            ctx.fillStyle = 'red'; // this.getValueOfPropertyAt(lineIndex, charIndex, "fill")
+            ctx.fillStyle = "rgba(0, 0, 0, 0)"; // this.getValueOfPropertyAt(lineIndex, charIndex, "fill")
             ctx.globalAlpha = this.__isMousedown ? 1 : this._currentCursorOpacity;
             ctx.fillRect(boundaries.left + boundaries.leftOffset - cursorWidth / 2, topOffset + boundaries.top + dy, cursorWidth, charHeight);
         },
